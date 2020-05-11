@@ -1,0 +1,419 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: url("assets/bg-hero-desktop.svg");
+  background-size: cover;
+  background-position: center;
+}
+.body-filter{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  background: rgba(15, 182, 172,0.1);
+}
+.wrapper{
+  height: 22.5vw;
+  width: 100%;
+  background: url('assets/bg2.jpg');
+  background-size: 100%;
+  background-position: center;
+  z-index: 1;
+}
+.body{
+  height: auto;
+  width: 100%;
+  height: 18vw;
+  margin-bottom: 3%;
+  padding-bottom: 2vw;
+  z-index: 2;
+}
+.main-wrap{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0%;
+}
+.main{
+  width: 84%;
+  height: 30vw;
+  position: relative;
+  top: -100%;
+}
+.info{
+  width: 60%;
+  height: 100%;
+  background: rgb(182, 68, 15);
+  position: relative;
+  float: left;
+  z-index: 2;
+}
+.name{
+  width: 100%;
+  padding-left: 5%;
+  padding-top: 5%;
+  color: white;
+  font-size: 2vw;
+  line-height: 3vw;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+}
+.info::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  background: rgb(182, 104, 15);
+  width: 20%;
+  right: -10%;
+  transform: skewX(10deg);
+}
+.foto{
+  width: 40%;
+  height: 100%;
+  float: left;
+  background: red;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.foto img{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  right: -5%;
+  top: -10vw;
+}
+.medsos{
+  width: 100%;
+  height: auto;
+  padding-left: 5%;
+  margin-top: 10%;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 600;
+  font-family: 'Changa', sans-serif;
+}
+.medsos span{
+  float: left;
+  margin-right: 1%;
+}
+.email,.wa,.alamat{
+  clear: both;
+  width: auto;
+  height: auto;
+  margin-bottom: 2.5%;
+}
+.med{
+  float: left;
+  margin-right: 5%;
+  width: 5%;
+}
+
+.med img{
+  width: 2.5vw;
+  height: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid white;
+  background: white;
+  transition: 0.5s;
+}
+.med img:hover{
+  box-shadow: 0 0 50px white;
+}
+.hubung{
+  padding-left: 5%;
+  margin-top: 3%;
+  display: flex;
+  justify-content: left;
+}
+.ket{
+  width: 100%;
+  height: auto;
+  margin-bottom: 3vw;
+  display: flex;
+  justify-content: center;
+  font-family: 'Changa', sans-serif;
+
+}
+.keterangan{
+  width: 84%;
+  height: 25vw;
+  box-shadow: 0px 0px 5px rgb(149, 149, 149);
+  box-shadow: 0 0 50px rgb(149, 149, 149);
+  border-radius: 5px;
+  padding-bottom: 2vw;
+  background: white;
+  opacity: 0.9;
+  /* background: rgb(2, 10, 24); */
+}
+.left{
+  width: 10%;
+  height: 27vw;
+  float: left;
+  background: rgb(182, 137, 15);
+}
+.left .icon{
+  width: 100%;
+  height: 33.3333333333%;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.left .icon img{
+  width: 5vw;
+  height: auto;
+}
+.left .icon:hover{
+  box-shadow:inset 0 0 40px white;
+}
+.right{
+  width: 80%;
+  height: 25vw;
+  float: left;
+}
+.right h1{
+  font-size: 2vw;
+}
+.right h1::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  height: 3.2vw;
+  border-bottom: 2px dashed rgb(182, 129, 15);
+}
+.right p{
+  font-size: 1.3vw;
+}
+.story, .about, .skill{
+  width: 100%;
+  padding: 5%;
+}
+.story h1{
+  margin-bottom: 1vw;
+}
+.story p{
+  text-indent: 2vw;
+  line-height: 1.5vw;
+  text-align: justify;
+}
+.actived{
+  background: rgb(26, 103, 94);
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+.inf{
+  margin: 1vw 0 1vw 0;
+  font-size:1.3vw;
+  border-bottom: 2px dashed rgb(11, 152, 126);
+}
+.inf span:first-child{
+  font-weight: 600;
+  width: 10%;
+  display: block;
+  float: left;
+}
+.skl{
+  margin-top: 3vw;
+}
+.skl span{
+  display: block;
+  float: left;
+  width: 20%;
+  text-align: center;
+  height: 3vw;
+  background: rgb(179, 11, 147);
+  font-size: 1.3vw;
+  line-height: 3vw;
+  border-radius: 30px;
+  margin: 1vw;
+  font-weight: 500;
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .body{
+    margin-bottom: 8%;
+  }
+  .wrapper{
+    height: 30vw;
+  }
+  .main-wrap{
+    top: 30%;
+  }
+  .main{
+    height: 35vw;
+  }
+  .name{
+    font-size: 2.5vw;
+    line-height: 5vw;
+  }
+  /* .medsos{
+    font-size: 2vw;
+  } */
+  .email,.wa,.alamat{
+    margin-bottom: 0;
+  }
+  .med{
+    width: 7%;
+  }
+  .med img{
+    width: 3.3vw;
+  }
+  .foto img{
+    top: -7vw;
+  }
+  .keterangan{
+    height: 30vw;
+    padding: 0;
+  }
+  .left, .right{
+    height: 30vw;
+  }
+  .right h1{
+    font-size: 2.5vw;
+  }
+  .right h1::before{
+    height: 4.3vw;
+  }
+  .right p{
+    font-size: 2vw;
+    line-height: 2.2vw;
+  }
+  .right span{
+    font-size: 2vw;
+    line-height: 2vw;
+  }
+  .skl span{
+    width: 20%;
+    line-height: 3vw;
+    font-size: 1.8vw;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .body{
+    margin-bottom: 15%;
+  }
+  .main-wrap{
+    top: 25%;
+  }
+  .main{
+    height: 40vw;
+  }
+  .name{
+    font-size: 2.9vw;
+  }
+  .medsos{
+    font-size: 2.4vw;
+  }
+  .med{
+    width: 10%;
+  }
+  .med img{
+    width: 4.5vw;
+  }
+  .foto img{
+    top: -1vw;
+  }
+  .keterangan{
+    height: 35vw;
+    padding: 0;
+  }
+  .left, .right{
+    height: 35vw;
+  }
+  .right h1{
+    font-size: 3vw;
+  }
+  .right h1::before{
+    height: 4.8vw;
+    width: 15%;
+  }
+  .right p{
+    font-size: 2.5vw;
+    line-height: 2.8vw;
+  }
+  .right span{
+    font-size: 2.4vw;
+    line-height: 2.8vw;
+    margin-right: 5%;
+  }
+  .skl span{
+    width: 25%;
+    line-height: 3vw;
+    font-size: 2.2vw;
+    height: 4vw;
+    line-height: 4vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .body{
+    margin-bottom: 15%;
+  }
+  .info::before{
+    width: 0;
+  }
+  .main-wrap{
+    top: 15%;
+  }
+  .main{
+    height: 40vw;
+  }
+  .name{
+    font-size: 3.3vw;
+  }
+  .medsos{
+    font-size: 2.5vw;
+  }
+  .med{
+    width: 10%;
+  }
+  .med img{
+    width: 4.5vw;
+  }
+  .foto img{
+    top: -1vw;
+    right: 0;
+  }
+  .keterangan{
+    height: 35vw;
+    padding: 0;
+  }
+  .left, .right{
+    height: 35vw;
+  }
+  .right h1{
+    font-size: 3vw;
+  }
+  .right h1::before{
+    height: 4.8vw;
+    width: 15%;
+  }
+  .right p{
+    font-size: 2.5vw;
+    line-height: 2.8vw;
+  }
+  .right span{
+    font-size: 2.4vw;
+    line-height: 2.8vw;
+    margin-right: 5%;
+  }
+  .skl span{
+    width: 25%;
+    line-height: 3vw;
+    font-size: 2.2vw;
+    height: 4vw;
+    line-height: 4vw;
+  }
+}
